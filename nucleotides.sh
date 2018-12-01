@@ -1,0 +1,19 @@
+#1/bin/bash
+
+dnaSeq="cagagcaagactctgtctaaataaataaattaattaaattaaaaaataaataaaattgatgttttaggctaggtgtggtggctcacgcctgtaatcccagcactttgggaggccaaagtaggtggatcacctgaggtcaggagttcgagaccagcctggccaacatggtgaaaccccatctctactaaaaatacaaaaattagccgggcatagtggcgcacacctgtaatcccagcaactcgggaggctgaggcaggagaatcgcttgaacccatgtggcaaaggttgctgtgagctgagatcacaccactgtactccagcctgggcgacagagcaagactgtgtctcaattaaaaaaaattgatatttttatcaggtattaactctgaaaatacaaaaattagccaggcgtgatggcccacacctgtaatcctagctactcgggaggctgaggcacgagaatcgcctgaacctaggaggtggaggttgcagtgagctgagattgtgacactgcactccagtctggtgacagagcgagaccctctcaaaaaaaaaaaagaaaagccgagggagagaaaccttcccatttagtctgtggcatgtgtcttcatgaattgcttaagctctcaaatgttctttcagtaatttaaactcttctgctggttttcctgggaagggtgctgtataatcacatattaatgagtctttatgtgataaccttgaacaggcacgtggaggagttcagccccagagctgtctacaccagtggtaaagcgtccagtgctgctggcttaacagcagctgttgtgagagatgaagaatctcatgagtttgtcattgaggctggagctttgatgttggctgataatgtaagaacattttacactcttcagtataaagaagtcagaatacccctaccctatcagtaaaggcctataagttaccattaaaaagatgtccttaaaaacagcattctcagctgggcgcggtggctcacacctttgtcccagtactttgggaagccgaggtgggtggatcacctgaggtcaggagttcgagaccagcctggccaacatggcgaaaacccattttctctactaaaaatacaaaaattagccgggcatggtggcgggtgcttgt"
+
+echo $dnaSeq | sed 's/[^a]//g^
+echo $dnaSeq | sed 's/[^a]//g'
+echo ""
+
+echo "Number of Cs:" 
+echo $dnaSeq | sed 's/[^c]//g' | wc -c
+echo ""
+
+echo "Number of Gs:"
+echo $dnaSeq | sed 's/[^g]//g' | wc -c
+echo ""
+
+echo "number of Ts:"
+echo $dnaSeq | sed 's/[^g]//g' | wc -c
+echo ""
