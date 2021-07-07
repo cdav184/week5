@@ -1,0 +1,56 @@
+Part 1) 
+#!/bin/bash
+ 
+n=$1
+sum=0
+for i in $@
+do
+        if [[ $i -lt 10 ]]
+        then
+        	count=$(($count+1))
+        fi
+        sum=$((sum+$i))
+done
+echo $sum
+echo $count
+
+# DB: Good! But n doesn't do anything, right?
+#     Also good idea to initialize count to 0 at the top (like you did with sum).
+
+
+Part 2)
+#!/bin/bash
+ 
+n=$1
+sum=0
+for i in $@
+do
+        if [[ $i -lt 10 ]]
+        then
+        	count=$(($count+1))
+        fi
+        sum=$((sum+$i))
+done
+echo $sum
+echo $count
+
+# DB: This looks the same as #1. Needs to read values from a file.
+
+
+Part 3)
+#!/bin/bash
+ 
+n=$1
+sum=0
+for i in $@
+do
+        if [[ $i -lt 10 ]]
+        then
+        	count=$(($count+1))
+        fi
+        sum=$((sum+$i))
+done
+echo $sum
+echo $count
+
+# DB: Also the same as #1?

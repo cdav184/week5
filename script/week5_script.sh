@@ -9,3 +9,5 @@ do
 		echo "Your word" $words "is not an animal"
 	fi
 done
+
+# DB: Good! The only thing is that your script doesn't accept command-line arguments.
